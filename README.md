@@ -6,7 +6,7 @@ link:
 
 (default size 360px x 640px)
 
-Front-end library: React.js; Others: React Router, Redux; Middleware: Tunk;
+Front-end library: React.js; Others: React Router, Context, React Hooks;
 
 On the page it is necessary to log in with an email in the pattern: someone@someone.com.
 The password must be at least 7 digits long.
