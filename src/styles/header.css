@@ -1,51 +1,33 @@
-.mainHeader {
-  background-color: var(--bs-color01);
-  border-bottom: 3px solid var(--bs-color04);
-  display: flex;
-  flex-direction: row;
-  /* gap: 100px; */
-  /* height: 60px; */
+.mainHeader{
+  background-color: var(--bs-color02);
+  border-bottom: 3px solid var(--bs-color01);
 }
 
-.header-title {
-  color: var(--bs-text02);
-  font-family: Hurricane , cursive;
-  font-size: 50px;
-  font-weight: 400;
+.header-title{
+  color: var(--bs-text01);
+  font-weight: bold;
+  font-size: 30px;
   margin: 5px;
   padding: 5px;
+  text-align: center;
 }
 
-.header-btns {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.profile-icon {
-  background-color: var(--bs-text02);
-
-  /* border: 1.5px solid  var(--bs-text01); */
-  border-radius: 50%;
-  box-shadow: 1px 3px 8px rgb(77, 75, 75);
-  height: 40px;
+.profile-icon{
   padding: 5px;
-  width: 40px;
-}
-
-.profile-icon:active {
-  box-shadow: none;
-}
-
-.search-button {
-  background-color: var(--bs-text02);
-  border: none;
   border-radius: 50%;
-  box-shadow: 1px 3px 8px rgb(77, 75, 75);
-  height: 40px;
-  width: 40px;
+  border: 1.5px solid  var(--bs-text01);
+  background-color: var(--bg-light);
+  margin: 5px;
 }
 
-.search-button:active {
-  box-shadow: none;
+.search-button{
+  border: none;
+  background-color: var(--bg-color02);
+} 
+
+.header-btns{
+  margin: 5px;
+  margin: 5px;
+  width: 20%;
+  text-align: center;
 }

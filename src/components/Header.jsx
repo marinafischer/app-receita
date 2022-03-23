@@ -24,6 +24,14 @@ export default function Header({ title, withSearchButton }) {
         className="background-light d-flex flex-row justify-content-around
           align-items-center mainHeader"
       >
+        <Link to="/profile" className="header-btns">
+          <Image
+            data-testid="profile-top-btn"
+            src={ profileIcon }
+            alt="Profile"
+            className="profile-icon"
+          />
+        </Link>
         <h1
           data-testid="page-title"
           className="header-title"
@@ -50,16 +58,6 @@ export default function Header({ title, withSearchButton }) {
               </button>
             )
           }
-
-          <Link to="/profile">
-            <Image
-              data-testid="profile-top-btn"
-              src={ profileIcon }
-              alt="Profile"
-              className="profile-icon"
-            />
-          </Link>
-
         </div>
 
       </header>

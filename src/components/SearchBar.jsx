@@ -14,6 +14,7 @@ export default function SearchBar() {
   const [search, setSearch] = useState('');
   const [searchType, setSearchType] = useState('');
   const [data, setData] = useState([]);
+  const [isDisabled, setIsDisabled] = useState(true);
   const history = useHistory();
   const { location: { pathname } } = history;
 
@@ -40,9 +41,13 @@ export default function SearchBar() {
     }
   }, [data, history, pathname, setDrinkData, setFoodData]);
 
+  useEffect(() => {
+    if (search.length > 0 && searchType.length > 0) setIsDisabled(false);
+    else setIsDisabled(true);
+  }, [search, searchType]);
+
   return (
     <section className="search-content">
-
       <div className="input-group mb-3 search-input-group">
         <FormControl
           type="text"
@@ -60,6 +65,7 @@ export default function SearchBar() {
           type="submit"
           id="button-addon2"
           onClick={ handleSearch }
+          disabled={ isDisabled }
         >
           Search
         </button>
